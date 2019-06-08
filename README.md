@@ -1,6 +1,6 @@
 # Go client for NUT UPS library
 
-https://github.com/lzap/gonut-client
+https://github.com/lzap/gonutclient
 
 Simple client for connecting to UPS NUT daemon and reading arbitrary variables.
 For more info about the TCP text-based protocol visit:
