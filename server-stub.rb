@@ -60,6 +60,9 @@ loop do
         client.puts "OK"
       elsif line =~ /^GET VAR ([a-zA-Z0-9]+) ([a-zA-Z0-9\.]+)/i
         client.puts "VAR #{$1} #{$2} \"#{vars[$2.to_sym]}\""
+      elsif line =~ /^LOGOUT/i
+        client.puts "Ok Goodbye"
+        break
       else
         client.puts "ERR UNKNOWN-COMMAND"
       end
